@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de clima</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Pesquisa de Clima Organizacional</b></legend>
+                <br>
+                <div class="image">
+                <img src="icones/todos.png" alt="" width="200px"> 
+            </div>
+                <br>
+
+                <div class="inputbox">
+                    <label for="nome" class="label_input">Nome Completo</label> <br>
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                </div>
+                <br><br>
+                <div class="inputbox"> 
+                    <label for="funcao" class="label_input">Função</label>  <br>        
+                    <input type="text" name="funcao" id="funcao" class="inputuser" required>
+                </div>   
+                <br>
+                <br>
+                    <select id="setores">
+                        <option selected disabled value=""><b>Selecione seu Setor</b></option>
+                        <option>Administração</option>
+                        <option>C.Cirugico</option>
+                        <option>Maternidade</option>
+                        <option>Recepção</option>
+                        <option>Pronto Socorro</option>
+                        <option>Manutenção</option>
+                        <option>Limpeza</option>
+                        <option>Radiologia</option>
+                        <option>Lavanderia</option>
+                    </select>              
+                <br>
+                <br>
+                <div class="descricao">
+                    <p><b>Responda o questionario abaixo clicando nas opções</b></p>
+                </div>
+                 <br>
+                 <p>1 - Como você se sente em relação às tarefas que você executa diariamente?</p>
+                <div class="pergunta1">                   
+                   <div><input type="radio" name="tarefas" value="tarefas1" id="tarefas" required>
+                    <label for="tarefas1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="tarefas" value="tarefas2" id="tarefas" required>
+                    <label for="tarefas2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="tarefas" value="tarefas3" id="tarefas" required>
+                    <label for="tarefas3">Indiferente</label></div>
+                    <div><input type="radio" name="tarefas" value="tarefas4" id="tarefas" required>
+                    <label for="tarefas4">Satisfeito</label></div>
+                    <div><input type="radio" name="tarefas" value="tarefas5" id="tarefas" required>
+                    <label for="tarefas5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="tarefas" value="tarefas6" id="tarefas" required>
+                    <label for="tarefas6">Não quero responder</label></div>
+                </div> 
+                <br>
+                <p>2 - Como você avalia a sua relação com seu líder nos últimos meses?</p>
+                <div class="pergunta2">                   
+                    <div><input type="radio" name="relacao" value="relacao1" id="relacao" required>
+                    <label for="relacao1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="relacao" value="relacao2" id="relacao" required>
+                    <label for="relacao2">Insatisfeito</label></div>
+                    <div><input type="radio" name="relacao" value="relacao3" id="relacao" required>
+                    <label for="relacao3">Indiferente</label></div>
+                    <div><input type="radio" name="relacao" value="relacao4" id="relacao" required>
+                    <label for="relacao4">Satisfeito</label></div>
+                    <div> <input type="radio" name="relacao" value="relacao5" id="relacao" required>
+                    <label for="relacao5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="relacao" value="relacao6" id="relacao" required>
+                    <label for="relacao6">Não quero responder</label></div>
+                </div> 
+                <br>
+                <p>3 - Quão satisfeito(a) você está em relação à liberdade de expressão na empresa?</p>
+                <div class="pergunta3">                   
+                    <div> <input type="radio" name="liberdade" value="liberdade1" id="liberdade" required>
+                    <label for="liberdade1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="liberdade" value="liberdade2" id="liberdade" required>
+                    <label for="liberdade2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="liberdade" value="liberdade3" id="liberdade" required>
+                    <label for="liberdade3">Indiferente</label></div>
+                    <div> <input type="radio" name="liberdade" value="liberdade4" id="liberdade" required>
+                    <label for="liberdade4">Satisfeito</label></div>
+                    <div> <input type="radio" name="liberdade" value="liberdade5" id="liberdade" required>
+                    <label for="liberdade5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="liberdade" value="liberdade6" id="liberdade" required>
+                    <label for="liberdade6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>4 - Como você se sente com o seu local de trabalho físico? (Espaço, equipamentos, softwares etc.)</p>
+                <div class="pergunta4">                   
+                    <div> <input type="radio" name="local" value="local1" id="local" required>
+                    <label for="local1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="local" value="local2" id="local" required>
+                    <label for="local2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="local" value="local3" id="local" required>
+                    <label for="local3">Indiferente</label></div>
+                    <div> <input type="radio" name="local" value="local4" id="local" required>
+                    <label for="local4">Satisfeito</label></div>
+                    <div> <input type="radio" name="local" value="local5" id="local" required>
+                    <label for="local5">Muito Satisfeito</label></div>
+                    <div><input type="radio" name="local" value="local6" id="local" required>
+                    <label for="local6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>5 - Como você se sente em quanto aos benefícios oferecidos pela empresa?</p>
+                <div class="pergunta5">                   
+                    <div> <input type="radio" name="colegas" value="colegas1" id="colegas" required>
+                    <label for="colegas1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="colegas" value="colegas2" id="colegas" required>
+                    <label for="colegas2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="colegas" value="colegas3" id="colegas" required>
+                    <label for="colegas3">Indiferente</label></div>
+                    <div> <input type="radio" name="colegas" value="colegas4" id="colegas" required>
+                    <label for="colegas4">Satisfeito</label></div>
+                    <div> <input type="radio" name="colegas" value="colegas5" id="colegas" required>
+                    <label for="colegas5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="colegas" value="colegas6" id="colegas" required>
+                    <label for="colegas6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>6 - Como você se sente em quanto aos benefícios oferecidos pela empresa?</p>
+                <div class="pergunta6">                   
+                    <div> <input type="radio" name="beneficios" value="beneficios1" id="beneficios" required>
+                    <label for="beneficios1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="beneficios" value="beneficios2" id="beneficios" required>
+                    <label for="beneficios2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="beneficios" value="beneficios3" id="beneficios" required>
+                    <label for="beneficios3">Indiferente</label></div>
+                    <div> <input type="radio" name="beneficios" value="beneficios4" id="beneficios" required>
+                    <label for="beneficios4">Satisfeito</label></div>
+                    <div> <input type="radio" name="beneficios" value="beneficios5" id="beneficios" required>
+                    <label for="beneficios5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="beneficios" value="beneficios6" id="beneficios" required>
+                    <label for="beneficios6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>7 - Quão satisfeito(a) você está com a adminstração atual da empresa?</p>
+                <div class="pergunta7">                  
+                    <div> <input type="radio" name="administracao" value="administracao1" id="administracao" required>
+                    <label for="administracao1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="administracao" value="administracao2" id="administracao" required>
+                    <label for="administracao2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="administracao" value="administracao3" id="administracao" required>
+                    <label for="administracao3">Indiferente</label></div>
+                    <div> <input type="radio" name="administracao" value="administracao4" id="administracao" required>
+                    <label for="administracao4">Satisfeito</label></div>
+                    <div> <input type="radio" name="administracao" value="administracao5" id="administracao" required>
+                    <label for="administracao5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="administracao" value="administracao6" id="administracao" required>
+                    <label for="administracao6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>8 - Qual é seu nível de satisfação com a sua rotina de trabalho?</p>
+                <div class="pergunta8">                   
+                    <div> <input type="radio" name="rotina" value="rotina1" id="rotina" required>
+                    <label for="rotina1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="rotina" value="rotina2" id="rotina" required>
+                    <label for="rotina2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="rotina" value="rotina3" id="rotina" required>
+                    <label for="rotina3">Indiferente</label></div>
+                    <div> <input type="radio" name="rotina" value="rotina4" id="rotina" required>
+                    <label for="rotina4">Satisfeito</label></div>
+                    <div> <input type="radio" name="rotina" value="rotina5" id="rotina" required>
+                    <label for="rotina5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="rotina" value="rotina6" id="rotina" required>
+                    <label for="rotina6">Não quero responder</label></div>
+                </div>
+                <br>
+                <p>9 - No geral, qual seu nível de satisfação em trabalhar na Santa Casa?</p>
+                <div class="pergunta9">                   
+                    <div> <input type="radio" name="trabalhar" value="trabalhar1" id="trabalhar" required>
+                    <label for="trabalhar1">Muito Insatisfeito</label></div>
+                    <div> <input type="radio" name="trabalhar" value="trabalhar2" id="trabalhar" required>
+                    <label for="trabalhar2">Insatisfeito</label></div>
+                    <div> <input type="radio" name="trabalhar" value="trabalhar3" id="trabalhar" required>
+                    <label for="trabalhar3">Indiferente</label></div>
+                    <div> <input type="radio" name="trabalhar" value="trabalhar4" id="trabalhar" required>
+                    <label for="trabalhar4">Satisfeito</label></div>
+                    <div> <input type="radio" name="trabalhar" value="trabalhar5" id="trabalhar" required>
+                    <label for="trabalhar5">Muito Satisfeito</label></div>
+                    <div> <input type="radio" name="trabalhar" value="trabalhar6" id="trabalhar" required>
+                    <label for="trabalhar6">Não quero responder</label></div>
+                </div>
+                <br>
+                <div class="pergunta10">
+                    <p>10 - Faça um Elogio, critica, reclamação ou sugestão?</p>
+                    <textarea rows="10" style="width: 100%;" id="sugestao" name="sugestao"></textarea>
+                </div>
+                <br>
+
+                <input type="submit" name="submit" id="submit">
+                
+
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
